@@ -10,7 +10,7 @@ $text-primary-color: #464646;
 
 /*spacing*/
 $item-spacing: 4rem;
-$space-bit: .1rem;
+$space-bit: .3rem;
 $space-normal: 1rem;
 $space-medium: 1.5rem;
 
@@ -23,10 +23,19 @@ $item-secondary-hover-color: $theme-primary-color;
 
 /*sizes*/
 $header-top-height: 25px;
-$header-main-height: 120px;
+$header-main-height: 115px;
 
 /*font sizes*/
 $item-small-size: .7rem;
 $item-normal-size: 1rem;
+
+/*endregion*/
+
+/*region jumbo*/
+/*paths*/
+$jumbo-background-path: "../images/jumbotron.jpg";
+
+/*sizes*/
+$jumbo-height: 400px;
 
 /*endregion*/
