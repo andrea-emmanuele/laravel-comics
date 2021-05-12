@@ -1,12 +1,32 @@
+/*content sizes*/
+$content-width: 1250px;
+
 /*theme colors*/
 $theme-primary-color: #0282f9;
 $theme-secondary-color: #fff;
 
-/*sizes*/
-$header-top-height: 25px;
+/*text colors*/
+$text-primary-color: #464646;
 
 /*spacing*/
-$item-spacing: 0 2rem;
+$item-spacing: 4rem;
+$space-bit: .1rem;
+$space-normal: 1rem;
+$space-medium: 1.5rem;
 
-/*links*/
-$link-primary-color: $theme-secondary-color;
+/*region header*/
+
+/*colors*/
+$item-primary-color: $theme-secondary-color;
+$item-secondary-color: $text-primary-color;
+$item-secondary-hover-color: $theme-primary-color;
+
+/*sizes*/
+$header-top-height: 25px;
+$header-main-height: 120px;
+
+/*font sizes*/
+$item-small-size: .7rem;
+$item-normal-size: 1rem;
+
+/*endregion*/

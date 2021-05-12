@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .content {
-    width: 1200px;
+    width: $content-width;
     margin: 0 auto;
 
     a {
@@ -13,8 +16,10 @@
     }
 
     a, span {
-        &.primary {
-            color: $link-primary-color;
+        &.primary,
+        &.secondary {
+            color: inherit;
+            cursor: pointer;
         }
     }
 }

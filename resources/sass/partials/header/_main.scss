@@ -1,3 +1,94 @@
-.content {
+section#main {
+    .content {
+        .inner-content {
+            height: $header-main-height;
+            @include flex(row, center, stretch);
 
+            .brand {
+                @include flex(row, flex-start, center);
+                flex: 0 0 150px;
+
+                img {
+                    width: 60%;
+                    height: 80px;
+                    object-fit: contain;
+                }
+            }
+
+            nav {
+                @include flex(row, space-around, stretch);
+                flex: 1 0 100px;
+
+                .item {
+                    position: relative;
+                    color: $item-secondary-color;
+                    transition: color 200ms ease-in-out;
+                    cursor: pointer;
+                    @include flex(row, center, center);
+
+                    &.dropdown {
+                        &:after {
+                            color: $theme-primary-color;
+                        }
+                    }
+
+                    &.active,
+                    &:hover {
+                        color: $item-secondary-hover-color;
+
+                        > * {
+                            &:after {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                background: $theme-primary-color;
+                                height: 4px;
+                                width: 100%;
+                                content: "";
+                            }
+                        }
+                    }
+
+                    a {
+                        color: inherit;
+                    }
+                }
+            }
+
+            .search-box {
+                @include flex(row, flex-end, center);
+                flex: 0 0 180px;
+
+                .inner-wrapper {
+                    position: relative;
+                    @include flex(row, flex-end, center);
+
+                    &:after {
+                        @extend %fa-icon;
+                        @extend .fas;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        content: fa-content($fa-var-search);
+                    }
+
+                    input[type="text"] {
+                        width: 80%;
+                        padding-right: $space-medium;
+                        padding-bottom: $space-bit;
+                        border: none;
+                        border-bottom: 2px solid $theme-primary-color;
+                        outline: none;
+
+                        &::placeholder {
+                            text-align: right;
+                            font-size: $item-normal-size;
+                            font-weight: 500;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

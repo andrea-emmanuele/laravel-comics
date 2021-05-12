@@ -6,10 +6,12 @@ section#top {
             @include flex(row, flex-end, center);
 
             nav {
+                color: $item-primary-color;
                 @include flex(row, center, center);
 
                 .item {
-                    padding: $item-spacing;
+                    font-size: $item-small-size;
+                    margin-left: $item-spacing;
                 }
             }
         }
