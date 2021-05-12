@@ -1,0 +1,17 @@
+section#top {
+    background: $theme-primary-color;
+    .content {
+        .inner-content {
+            height: $header-top-height;
+            @include flex(row, flex-end, center);
+
+            nav {
+                @include flex(row, center, center);
+
+                .item {
+                    padding: $item-spacing;
+                }
+            }
+        }
+    }
+}
