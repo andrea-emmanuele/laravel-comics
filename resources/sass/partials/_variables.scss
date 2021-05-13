@@ -6,16 +6,20 @@ $theme-primary-color: #0282f9;
 $theme-secondary-color: #fff;
 $theme-ternary-color: #1c1c1c;
 $theme-quaternary-color: #303030;
+$theme-fifty-color: #00a9d9;
 
 /*font-sizes*/
 $font-little: .8rem;
 $font-less-little: .9rem;
 $font-normal: 1rem;
 $font-medium: 1.3rem;
+$font-big: 1.6rem;
 
 /*text colors*/
 $text-primary-color: #464646;
 $text-secondary-color: #959595;
+$text-ternary-color: #003f5e;
+$text-quaternary-color: #555555;
 
 /*spacing*/
 $item-spacing: 4rem;
@@ -61,6 +65,15 @@ $card-thumb-height: 180px;
 
 /*font sizes*/
 $card-title-size: .85rem;
+
+/*region series*/
+$series-width: 82%;
+$preview-badge-background: $theme-fifty-color;
+$series-title-color: $text-ternary-color;
+$series-description-color: $text-quaternary-color;
+$series-description-spacing: 1.6rem;
+$series-col-width: 280px;
+/*endregion*/
 
 /*endregion*/
 

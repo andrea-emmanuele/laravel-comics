@@ -1,0 +1,11 @@
+section#details {
+    @import "top_bar";
+    @import "main";
+
+    .content {
+        .inner-content {
+            width: $series_width;
+            margin: 0 auto;
+        }
+    }
+}
