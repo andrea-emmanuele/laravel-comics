@@ -16,6 +16,7 @@ section#main {
             }
 
             nav {
+                position: relative;
                 @include flex(row, space-around, stretch);
                 flex: 1 0 100px;
 
@@ -35,7 +36,9 @@ section#main {
                     &.active,
                     &:hover {
                         color: $item-secondary-hover-color;
+                    }
 
+                    &.active {
                         > * {
                             &:after {
                                 position: absolute;
@@ -52,6 +55,15 @@ section#main {
                     a {
                         color: inherit;
                     }
+                }
+
+                .underline {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $theme-primary-color;
+                    height: 4px;
+                    width: 0px;
                 }
             }
 

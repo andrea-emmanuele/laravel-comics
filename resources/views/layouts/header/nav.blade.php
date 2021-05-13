@@ -29,6 +29,7 @@
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item dropdown"><span class="secondary">Lorem</span></div>
+                <div class="underline"></div>
             </nav>
             <div class="search-box">
                 <div class="inner-wrapper">

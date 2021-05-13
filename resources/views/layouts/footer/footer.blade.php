@@ -119,11 +119,11 @@
              <div class="inner-content">
                  <div class="item-group">
                      <span class="follow-us">follow us</span>
-                     <a href="#" class="icon"><img src="images/footer-facebook.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="images/footer-twitter.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="images/footer-youtube.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="images/footer-pinterest.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="images/footer-periscope.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="../images/footer-facebook.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="../images/footer-twitter.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="../images/footer-youtube.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="../images/footer-pinterest.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="../images/footer-periscope.png" alt="facebook"></a>
                  </div>
              </div>
          </div>

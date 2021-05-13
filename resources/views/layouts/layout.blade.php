@@ -10,5 +10,7 @@
     @include('layouts.header.header')
     @include('layouts.main.main')
     @include('layouts.footer.footer')
+
+    <script src="../js/app.js"></script>
 </body>
 </html>
