@@ -1,0 +1,45 @@
+section#pie {
+    position: relative;
+    background: $theme-quaternary-color;
+    height: $footer-pie-height;
+    z-index: 2;
+
+    .content {
+        height: 100%;
+        @include flex(row, space-between, center);
+
+        .inner-content {
+            a {
+                &.sign-up-btn {
+                    font-weight: 500;
+                    color: $theme-secondary-color;
+                    text-transform: uppercase;
+                    padding: $space-normal;
+                    border: 2px solid $theme-primary-color;
+                }
+            }
+
+            .item-group {
+                @include flex(row, flex-start, center);
+
+                span {
+                    &.follow-us {
+                        font-size: $font-medium;
+                        font-weight: 500;
+                        color: $theme-primary-color;
+                        text-transform: uppercase;
+                        margin-right: $space-medium;
+                    }
+                }
+
+                a {
+                    + a {
+                        &.icon {
+                            margin-left: $space-normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

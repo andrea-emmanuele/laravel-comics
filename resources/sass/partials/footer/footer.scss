@@ -1,0 +1,28 @@
+footer {
+    position: relative;
+    background: url($footer-background-path) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    &:after {
+        position: absolute;
+        top: -20%;
+        right: 18%;
+        width: $footer-placeholder-logo-size;
+        height: $footer-placeholder-logo-size;
+        background: url($footer-placeholder-logo) no-repeat;
+        background-size: contain;
+        content: "";
+        display: block;
+    }
+
+    .content {
+        @import "main";
+
+        a {
+            color: $footer-link-color;
+        }
+    }
+
+    @import "pie";
+}

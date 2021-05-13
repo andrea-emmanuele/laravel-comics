@@ -4,15 +4,24 @@ $content-width: 1250px;
 /*theme colors*/
 $theme-primary-color: #0282f9;
 $theme-secondary-color: #fff;
+$theme-ternary-color: #1c1c1c;
+$theme-quaternary-color: #303030;
+
+/*font-sizes*/
+$font-little: .8rem;
+$font-normal: 1rem;
+$font-medium: 1.3rem;
 
 /*text colors*/
 $text-primary-color: #464646;
+$text-secondary-color: #959595;
 
 /*spacing*/
 $item-spacing: 4rem;
 $space-bit: .3rem;
 $space-normal: 1rem;
 $space-medium: 1.5rem;
+$space-more: 2rem;
 
 /*region header*/
 
@@ -29,13 +38,29 @@ $header-main-height: 115px;
 $item-small-size: .7rem;
 $item-normal-size: 1rem;
 
-/*endregion*/
-
 /*region jumbo*/
 /*paths*/
 $jumbo-background-path: "../images/jumbotron.jpg";
 
 /*sizes*/
 $jumbo-height: 400px;
+
+/*endregion*/
+
+/*endregion*/
+
+/*region footer*/
+
+/*paths*/
+$footer-background-path: "../images/footer-bg.jpg";
+$footer-placeholder-logo: "../images/dc-logo-bg.png";
+
+/*colors*/
+$footer-text-color: $text-secondary-color;
+$footer-link-color: $theme-primary-color;
+
+/*sizes*/
+$footer-placeholder-logo-size: 550px;
+$footer-pie-height: 100px;
 
 /*endregion*/

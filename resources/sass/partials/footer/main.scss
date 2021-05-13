@@ -1,0 +1,41 @@
+section#main {
+    color: $footer-text-color;
+    padding: $space-normal 0;
+
+    .inner-content {
+        width: 49%;
+        @include flex(row, flex-start, flex-start);
+
+        .col {
+            .item-group {
+                margin-right: $space-more;
+                @include flex(column, flex-start, flex-start);
+
+                .item {
+                    h1 {
+                        font-size: $font-medium;
+                        color: $theme-secondary-color;
+                        text-transform: uppercase;
+                        margin: $space-normal 0;
+                    }
+
+                    a {
+                        font-size: $font-little;
+                        color: inherit;
+                    }
+                }
+            }
+        }
+
+        + .inner-content {
+            .item {
+                padding-top: $space-normal;
+                padding-bottom: $space-normal;
+
+                p {
+                    font-size: $font-little;
+                }
+            }
+        }
+    }
+}
