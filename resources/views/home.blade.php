@@ -1,22 +1,22 @@
 @extends('layouts.layout')
 
 @section('content')
-    <section id="films">
+    <section id="series">
         <div class="content">
             <div class="inner-content">
                 <div class="heading">
                     <h1>current series</h1>
                 </div>
                 @php
-                    $films = config('films');
+                    $series = config('series');
                 @endphp
                 <div class="cards">
-                    @foreach ($films as $film)
+                    @foreach ($series as $item)
                         <div class="card">
                             <div class="thumb">
-                                <img src="{{$film['thumb']}}" alt="{{$film['title']}}">
+                                <img src="{{$item['thumb']}}" alt="{{$item['title']}}">
                             </div>
-                            <a class="title" href="film/{{$loop->index+1}}">{{$film['series']}}</a>
+                            <a class="title" href="film/{{$loop->index+1}}">{{$item['series']}}</a>
                         </div>
                     @endforeach
                 </div>
