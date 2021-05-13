@@ -1,0 +1,10 @@
+.utilities-bar {
+    background: $theme-primary-color;
+    padding: $space-lot 0;
+
+    .content {
+        .inner-content {
+            padding: none;
+        }
+    }
+}

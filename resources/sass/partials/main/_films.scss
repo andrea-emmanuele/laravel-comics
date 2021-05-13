@@ -1,0 +1,59 @@
+section#films {
+    color: $theme-secondary-color;
+    background: $theme-ternary-color;
+    text-transform: uppercase;
+
+    .content {
+        .inner-content {
+            position: relative;
+            padding-top: calc(#{$films-heading-height/2} + #{$space-normal});
+            padding-bottom: $space-normal;
+
+            .heading {
+                position: absolute;
+                top: -($films-heading-height)/2;
+                left: 0;
+                background: $theme-primary-color;
+                height: $films-heading-height;
+                padding: $space-normal $space-medium;
+            }
+
+            .cards {
+                @include flex(row, flex-start, flex-start);
+                flex-wrap: wrap;
+
+                .card {
+                    flex: 0 0 $card-width;
+                    padding: $space-normal;
+
+                    .thumb {
+                        height: $card-thumb-height;
+                        margin-bottom: $space-normal;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 250px;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                    }
+
+                    a {
+                        color: inherit;
+                        &.title {
+                            font-size: $card-title-size;
+                        }
+                    }
+                }
+            }
+
+            + .inner-content {
+                padding-top: $space-normal;
+                @include flex(row, center, flex-start);
+            }
+        }
+    }
+
+    @import "bottom_bar";
+}

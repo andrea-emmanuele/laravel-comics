@@ -1,3 +1,3 @@
 <main>
-    @yield('home_content')
+    @yield('content')
 </main>

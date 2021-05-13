@@ -22,5 +22,17 @@
             cursor: pointer;
         }
     }
+
+    button {
+        all: unset;
+        cursor: pointer;
+
+        &.primary {
+            font-size: $font-less-little;
+            font-weight: 500;
+            background: $theme-primary-color;
+            padding: $space-less-than-normal $space-lot;
+        }
+    }
 }
 
