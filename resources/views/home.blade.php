@@ -16,7 +16,7 @@
                             <div class="thumb">
                                 <img src="{{$item['thumb']}}" alt="{{$item['title']}}">
                             </div>
-                            <a class="title" href="film/{{$loop->index+1}}">{{$item['series']}}</a>
+                            <a class="title" href="series/{{$loop->index+1}}">{{$item['series']}}</a>
                         </div>
                     @endforeach
                 </div>

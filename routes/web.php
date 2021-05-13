@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/film/{id}', function ($id) {
-    return view('film', ['id' => $id]);
-});
+Route::get('/series/{id}', function ($id) {
+
+    $series = config('series');
+
+    if (!array_key_exists($id-1, $series)) {
+        abort(404);
+    }
+
+    return view('series', ['id' => $id]);
+})->whereNumber('id');
