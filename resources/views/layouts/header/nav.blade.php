@@ -16,7 +16,7 @@
     <div class="content">
         <div class="inner-content">
             <div class="brand">
-                <img src="images/dc-logo.png" alt="brand">
+                <img src="../images/dc-logo.png" alt="brand">
             </div>
             <nav>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>

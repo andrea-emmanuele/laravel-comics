@@ -16,7 +16,7 @@
                             <div class="thumb">
                                 <img src="{{$film['thumb']}}" alt="{{$film['title']}}">
                             </div>
-                            <a class="title" href="films/{{$loop->index+1}}">{{$film['series']}}</a>
+                            <a class="title" href="film/{{$loop->index+1}}">{{$film['series']}}</a>
                         </div>
                     @endforeach
                 </div>
@@ -27,8 +27,4 @@
         </div>
         @include('layouts.main.bottom_bar')
     </section>
-@endsection
-
-@section('utilities_bar_content')
-    aaa
 @endsection
