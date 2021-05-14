@@ -68,18 +68,23 @@ $card-title-size: .85rem;
 
 /*region series*/
 $series-width: 82%;
+$go-back-top-position: -10px;
+$go-back-left-position: 40px;
+$go-back-background: #55ba59;
 $preview-badge-background: $theme-fifty-color;
 $series-details-primary-background: $theme-secondary-color;
 $series-details-secondary-background: #f6f6f6;
 $series-details-border-color: #e3e3e3;
 $series-details-title-color: $text-ternary-color;
+$series-details-link-color: $preview-badge-background;
 $series-details-info-primary-color: #bafd93;
 $series-details-info-secondary-color: $theme-secondary-color;
 $series-details-info-background: #55ba59;
 $series-details-info-border-color: #357739;
 $series-details-description-color: $text-quaternary-color;
 $series-details-description-spacing: 1.6rem;
-$series-col-width: 280px;
+$series-main-col-width: 280px;
+$series-col-5-width: 50%;
 /*endregion*/
 
 /*endregion*/

@@ -37,6 +37,17 @@
                     cursor: pointer;
                 }
             }
+
+            .back {
+
+                a {
+                    color: $go-back-background;
+                }
+
+                position: absolute;
+                top: $go-back-top-position;
+                right: $go-back-left-position;
+            }
         }
     }
 }

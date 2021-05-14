@@ -8,16 +8,8 @@
             @include flex(row, flex-start, flex-start);
 
             .col {
-                flex: 1 0 $series-col-width;
+                flex: 1 0 $series-main-col-width;
                 padding-right: $space-more;
-
-                h1 {
-                    &.title {
-                        font-size: $font-big;
-                        text-transform: uppercase;
-                        margin: $space-normal 0;
-                    }
-                }
 
                 p {
                     &.description {
@@ -25,6 +17,21 @@
                         color: $series-details-description-color;
                         line-height: $series-details-description-spacing;
                     }
+                }
+
+                .big-title {
+                    font-size: $font-big;
+                    text-transform: uppercase;
+                    margin: $space-normal 0;
+                }
+
+                .medium-title {
+                    font-size: $font-medium;
+                    margin: $space-normal 0;
+                }
+
+                .inner-title {
+                    font-size: $font-little;
                 }
 
                 .info {
@@ -39,7 +46,7 @@
 
                     .inner-info {
                         padding: $space-normal $space-medium;
-                        flex: 0 0 75%;
+                        flex: 0 0 74%;
                         @include flex(row, space-between, center);
 
                         &:first-of-type {
@@ -64,8 +71,7 @@
                 }
 
                 + .col {
-                    flex: 0 0 $series-col-width;
-
+                    flex: 0 0 $series-main-col-width;
                     .adv {
                         span {
                             &.title {
@@ -77,6 +83,10 @@
                         }
                     }
                 }
+
+                &.w5 {
+                    flex: 0 0 $series-col-5-width;
+                }
             }
         }
     }
@@ -85,5 +95,42 @@
         background: $series-details-secondary-background;
         border-top: 1px solid $series-details-border-color;
         border-bottom: 1px solid $series-details-border-color;
+
+        .content {
+            .inner-content {
+                padding: $space-bit 0 ($space-lot + $space-lot) 0;
+
+                .item {
+                    border-bottom: 1px solid $series-details-border-color;
+                    padding: $space-less-than-normal 0;
+                    margin-right: $space-normal;
+                    @include flex(row, flex-start, flex-start);
+
+                    .inner-item {
+                        flex-basis: 160px;
+
+                        a {
+                            &.inner-title {
+                                color: $series-details-link-color;
+                            }
+                        }
+
+                        + .inner-item {
+                            flex-grow: 1;
+
+                            a {
+                                &.upper {
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            &.right {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
