@@ -1,0 +1,9 @@
+header #top,
+main #series,
+footer #main {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

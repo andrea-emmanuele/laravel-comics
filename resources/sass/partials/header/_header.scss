@@ -7,16 +7,5 @@ header {
 
     .item {
         color: inherit;
-        &.dropdown {
-            &:after {
-                @extend %fa-icon;
-                @extend .fas;
-                position: relative;
-                top: .15rem;
-                left: .2rem;
-                color: inherit;
-                content: fa-content($fa-var-caret-down);
-            }
-        }
     }
 }

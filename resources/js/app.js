@@ -1,3 +1,3 @@
-import {navigationInteraction, onHover} from './navigation/hover';
+import {navigationInteraction} from './navigation/hover';
 
 navigationInteraction();

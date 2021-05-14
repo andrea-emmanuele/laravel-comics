@@ -33,6 +33,14 @@ section#pie {
                 }
 
                 a {
+                    &.icon {
+                        transition: filter 500ms linear;
+
+                        &:hover {
+                            filter: brightness(200%);
+                        }
+                    }
+
                     + a {
                         &.icon {
                             margin-left: $space-normal;

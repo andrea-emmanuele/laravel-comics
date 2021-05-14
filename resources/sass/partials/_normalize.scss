@@ -34,5 +34,17 @@
             padding: $space-less-than-normal $space-lot;
         }
     }
+
+    .dropdown {
+        &:after {
+            @extend %fa-icon;
+            @extend .fas;
+            position: relative;
+            top: .15rem;
+            left: .2rem;
+            color: inherit;
+            content: fa-content($fa-var-caret-down);
+        }
+    }
 }
 

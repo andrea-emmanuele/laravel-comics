@@ -1,6 +1,9 @@
-.main {
+.inner-details {
+    background: $series-details-primary-background;
+
     .content {
         .inner-content {
+            color: $series-details-title-color;
             padding: $space-lot 0;
             @include flex(row, flex-start, flex-start);
 
@@ -11,7 +14,6 @@
                 h1 {
                     &.title {
                         font-size: $font-big;
-                        color: $series-title-color;
                         text-transform: uppercase;
                         margin: $space-normal 0;
                     }
@@ -20,15 +22,68 @@
                 p {
                     &.description {
                         font-size: $font-less-little;
-                        color: $series-description-color;
-                        line-height: $series-description-spacing;
+                        color: $series-details-description-color;
+                        line-height: $series-details-description-spacing;
+                    }
+                }
+
+                .info {
+                    font-size: $font-less-little;
+                    font-weight: 500;
+                    color: $series-details-info-primary-color;
+                    background: $series-details-info-background;
+                    border-bottom: 1px solid $series-details-info-border-color;
+                    margin-top: $space-medium;
+                    margin-bottom: $space-normal;
+                    @include flex(row, flex-start, flex-start);
+
+                    .inner-info {
+                        padding: $space-normal $space-medium;
+                        flex: 0 0 75%;
+                        @include flex(row, space-between, center);
+
+                        &:first-of-type {
+                            border-right: 1px solid $series-details-info-border-color;
+                        }
+
+                        span {
+                            &.price {
+                                color: $series-details-info-secondary-color;
+                            }
+
+                            &.availability {
+                                text-transform: uppercase;
+                            }
+
+                            &.check-availability {
+                                color: $series-details-info-secondary-color;
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
 
                 + .col {
                     flex: 0 0 $series-col-width;
+
+                    .adv {
+                        span {
+                            &.title {
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                margin-bottom: $space-bit;
+                                float: right;
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+
+    + .inner-details {
+        background: $series-details-secondary-background;
+        border-top: 1px solid $series-details-border-color;
+        border-bottom: 1px solid $series-details-border-color;
     }
 }
