@@ -23,7 +23,7 @@ section#main {
                 .item {
                     position: relative;
                     color: $item-secondary-color;
-                    transition: color 200ms ease-in-out;
+                    transition: color 150ms ease-in;
                     cursor: pointer;
                     @include flex(row, center, center);
 
@@ -38,20 +38,6 @@ section#main {
                         color: $item-secondary-hover-color;
                     }
 
-                    &.active {
-                        > * {
-                            &:after {
-                                position: absolute;
-                                left: 0;
-                                bottom: 0;
-                                background: $theme-primary-color;
-                                height: 4px;
-                                width: 100%;
-                                content: "";
-                            }
-                        }
-                    }
-
                     a {
                         color: inherit;
                     }
@@ -63,7 +49,6 @@ section#main {
                     bottom: 0;
                     background: $theme-primary-color;
                     height: 4px;
-                    width: 0px;
                 }
             }
 

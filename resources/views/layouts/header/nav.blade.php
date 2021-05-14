@@ -20,8 +20,8 @@
             </div>
             <nav>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
-                <div class="item active"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
+                <div class="item active"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
                 <div class="item"><a href="#" class="secondary">Lorem</a></div>
