@@ -1,3 +1,4 @@
-import {navigationInteraction} from './navigation/hover';
+import {navigationInteraction} from './navigation/interaction';
 
-navigationInteraction();
+window.addEventListener('load', navigationInteraction);
+window.addEventListener('resize', navigationInteraction);

@@ -7,6 +7,7 @@ $theme-secondary-color: #fff;
 $theme-ternary-color: #1c1c1c;
 $theme-quaternary-color: #303030;
 $theme-fifty-color: #00a9d9;
+$theme-sixty-color: #e3e3e3;
 
 /*font-sizes*/
 $font-little: .8rem;
@@ -92,7 +93,7 @@ $go-back-background: $theme-secondary-color;
 $preview-badge-background: $theme-fifty-color;
 $series-details-primary-background: $theme-secondary-color;
 $series-details-secondary-background: #f6f6f6;
-$series-details-border-color: #e3e3e3;
+$series-details-border-color: $theme-sixty-color;
 $series-details-title-color: $text-ternary-color;
 $series-details-link-color: $preview-badge-background;
 $series-details-info-primary-color: #bafd93;

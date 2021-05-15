@@ -117,6 +117,10 @@ section#main {
 
                 button {
                     &.menu-btn {
+                        border: 1px solid $theme-sixty-color;
+                        border-radius: .25rem;
+                        @include flex(row, center, center);
+
                         svg {
                             color: $menu-btn-color;
                             width: 36px;
