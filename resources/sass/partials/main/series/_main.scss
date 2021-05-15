@@ -51,6 +51,11 @@
 
                         &:first-of-type {
                             border-right: 1px solid $series-details-info-border-color;
+
+                            @media screen and (max-width: map-get($breakpoints, md)) {
+                                border-right: unset;
+                                @include flex(row, space-around, center);
+                            }
                         }
 
                         span {
@@ -67,11 +72,23 @@
                                 cursor: pointer;
                             }
                         }
+
+                        @media screen and (max-width: map-get($breakpoints, md)) {
+                            width: 100%;
+                            border-bottom: 1px solid $series-details-info-border-color;
+                            @include flex(row, center, center);
+                        }
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, md)) {
+                        @include flex(column, flex-start, flex-start);
+                        border-bottom: unset;
                     }
                 }
 
                 + .col {
                     flex: 0 0 $series-main-col-width;
+
                     .adv {
                         span {
                             &.title {
@@ -81,12 +98,47 @@
                                 float: right;
                             }
                         }
+
+                        img {
+                            @media screen and (max-width: map-get($breakpoints, sm)) {
+                                float: right;
+                            }
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, xxl)) {
+                            display: none;
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, sm)) {
+                            margin-top: $space-lot;
+                            display: block;
+                        }
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, xxl)) {
+                        flex: 0 0 0;
                     }
                 }
 
                 &.w5 {
                     flex: 0 0 $series-col-5-width;
+
+                    @media screen and (max-width: map-get($breakpoints, sm)) {
+                        width: 100%;
+                    }
                 }
+
+                @media screen and (max-width: map-get($breakpoints, xxl)) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: map-get($breakpoints, xxl)) {
+                    padding-right: unset;
+                }
+            }
+
+            @media screen and (max-width: map-get($breakpoints, md)) {
+                @include flex(column, center, center);
             }
         }
     }
@@ -129,6 +181,10 @@
                             }
                         }
                     }
+                }
+
+                @media screen and (max-width: map-get($breakpoints, md)) {
+                    padding: $space-normal 0 $space-lot 0;
                 }
             }
         }

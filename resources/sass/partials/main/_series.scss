@@ -16,6 +16,13 @@ section#series {
                 background: $theme-primary-color;
                 height: $films-heading-height;
                 padding: $space-normal $space-medium;
+                @include flex(row, center, center);
+
+                h1 {
+                    @media screen and (min-width: map-get($breakpoints, md)) and (max-width: map-get($breakpoints, lg)) {
+                        font-size: 1.35rem;
+                    }
+                }
             }
 
             .cards {
@@ -36,6 +43,18 @@ section#series {
                             height: 250px;
                             object-fit: cover;
                             object-position: top;
+
+                            @media screen and (max-width: map-get($breakpoints, md)) {
+                                height: 315px;
+                            }
+                        }
+
+                        @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                            height: $card-lg-thumb-height;
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, lg)) {
+                            height: $card-md-thumb-height;
                         }
                     }
 
@@ -44,7 +63,27 @@ section#series {
 
                         &.title {
                             font-size: $card-title-size;
+
+                            @media screen and (max-width: map-get($breakpoints, md)) {
+                                font-size: $card-sm-title-size;
+                            }
                         }
+                    }
+
+                    @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                        flex: 0 0 $card-lg-width;
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, lg)) {
+                        flex: 0 0 $card-md-width;
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, md)) {
+                        flex: 0 0 $card-sm-width;
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, sm)) {
+                        flex: 0 0 $card-xs-width;
                     }
                 }
             }

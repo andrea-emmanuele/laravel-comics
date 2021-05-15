@@ -14,6 +14,31 @@ footer {
         background-size: contain;
         content: "";
         display: block;
+
+        @media screen and (min-width: map-get($breakpoints, xl)) and (max-width: map-get($breakpoints, xxl)) {
+            right: 6%;
+        }
+
+        @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+            right: 3%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, lg)) {
+            right: .3%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, md)) {
+            top: unset;
+            bottom: 0;
+            right: -10%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, sm)) {
+            bottom: 16%;
+            right: -10%;
+            width: $footer-sm-placeholder-logo-size;
+            height: $footer-sm-placeholder-logo-size;
+        }
     }
 
     .content {

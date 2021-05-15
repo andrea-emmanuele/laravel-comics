@@ -30,12 +30,23 @@ $space-medium: 1.5rem;
 $space-more: 2rem;
 $space-lot: 3rem;
 
+/*breakpoints*/
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
 /*region header*/
 
 /*colors*/
 $item-primary-color: $theme-secondary-color;
 $item-secondary-color: $text-primary-color;
 $item-secondary-hover-color: $theme-primary-color;
+$menu-btn-color: $theme-primary-color;
 
 /*sizes*/
 $header-top-height: 25px;
@@ -61,10 +72,17 @@ $jumbo-height: 400px;
 /*sizes*/
 $films-heading-height: 60px;
 $card-width: calc(100%/6);
+$card-lg-width: calc(100%/4);
+$card-md-width: calc(100%/3);
+$card-sm-width: calc(100%/2);
+$card-xs-width: 100%;
 $card-thumb-height: 180px;
+$card-lg-thumb-height: 250px;
+$card-md-thumb-height: auto;
 
 /*font sizes*/
 $card-title-size: .85rem;
+$card-sm-title-size: 1.1rem;
 
 /*region series*/
 $series-width: 82%;
@@ -101,6 +119,8 @@ $footer-link-color: $theme-primary-color;
 
 /*sizes*/
 $footer-placeholder-logo-size: 540px;
+$footer-sm-placeholder-logo-size: 200px;
 $footer-pie-height: 100px;
+$footer-sm-pie-height: 250px;
 
 /*endregion*/

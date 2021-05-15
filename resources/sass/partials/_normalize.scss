@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: .05rem;
 }
 
 .content {
@@ -45,6 +46,11 @@
             color: inherit;
             content: fa-content($fa-var-caret-down);
         }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, xxl)) {
+        width: 100%;
+        padding: 0 1rem;
     }
 }
 

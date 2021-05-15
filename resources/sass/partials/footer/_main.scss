@@ -17,13 +17,26 @@ section#main {
                         color: $theme-secondary-color;
                         text-transform: uppercase;
                         margin: $space-normal 0;
+
+                        @media screen and (max-width: map-get($breakpoints, md)) {
+                            font-size: $font-medium + $font-little;
+                        }
                     }
 
                     a {
                         font-size: $font-little;
                         color: inherit;
+
+                        @media screen and (max-width: map-get($breakpoints, md)) {
+                            font-size: $font-medium;
+                        }
                     }
                 }
+            }
+
+            @media screen and (max-width: map-get($breakpoints, sm)) {
+                width: 90%;
+                margin: 0 auto;
             }
         }
 
@@ -34,8 +47,21 @@ section#main {
 
                 p {
                     font-size: $font-little;
+
+                    @media screen and (max-width: map-get($breakpoints, md)) {
+                        font-size: $font-medium;
+                    }
                 }
             }
+        }
+
+        @media screen and (max-width: map-get($breakpoints, lg)) {
+            width: 54%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, md)) {
+            width: 100%;
+            @include flex(column, flex-start, flex-start);
         }
     }
 }

@@ -14,12 +14,52 @@
                         width: 55px;
                         height: 55px;
                         object-fit: contain;
+
+                        @media screen and (max-width: map-get($breakpoints, xl)) {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, sm)) {
+                            width: 65px;
+                            height: 65px;
+                        }
                     }
 
                     span {
                         margin-left: $space-less-than-normal;
+
+                        @media screen and (max-width: map-get($breakpoints, lg)) {
+                            font-size: $font-less-little;
+                            margin-top: $space-normal;
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, md)) {
+                            font-size: $font-little;
+                            white-space: nowrap;
+                        }
+
+                        @media screen and (max-width: map-get($breakpoints, sm)) {
+                            font-size: $font-medium;
+                        }
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, lg)) {
+                        @include flex(column, center, center);
+                    }
+
+                    @media screen and (max-width: map-get($breakpoints, sm)) {
+                        margin-bottom: $space-lot + $space-normal;
                     }
                 }
+
+                @media screen and (max-width: map-get($breakpoints, sm)) {
+                    @include flex(column, center, center);
+                }
+            }
+
+            @media screen and (max-width: map-get($breakpoints, md)) {
+                padding: 0 0;
             }
         }
     }

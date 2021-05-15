@@ -12,6 +12,14 @@ section#main {
                     width: 60%;
                     height: 130px;
                     object-fit: contain;
+
+                    @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                        width: 80%;
+                    }
+                }
+
+                @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                    flex: 0 0 80px;
                 }
             }
 
@@ -41,6 +49,10 @@ section#main {
                     a {
                         color: inherit;
                     }
+
+                    @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                        font-size: $font-less-little;
+                    }
                 }
 
                 .underline {
@@ -49,6 +61,10 @@ section#main {
                     bottom: 0;
                     background: $theme-primary-color;
                     height: 4px;
+                }
+
+                @media screen and (max-width: map-get($breakpoints, lg)) {
+                    display: none;
                 }
             }
 
@@ -85,6 +101,37 @@ section#main {
                         }
                     }
                 }
+
+                @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
+                    flex: 0 0 100px;
+                }
+
+                @media screen and (max-width: map-get($breakpoints, lg)) {
+                    display: none;
+                }
+            }
+
+            .mobile {
+                display: none;
+                flex: 0 0 80px;
+
+                button {
+                    &.menu-btn {
+                        svg {
+                            color: $menu-btn-color;
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: map-get($breakpoints, lg)) {
+                    @include flex(row, center, center);
+                }
+            }
+
+            @media screen and (max-width: map-get($breakpoints, lg)) {
+                @include flex(row, space-between, stretch);
             }
         }
     }
