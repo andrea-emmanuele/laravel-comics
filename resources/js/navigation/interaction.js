@@ -1,6 +1,12 @@
 import { gsap } from "gsap";
+import { mobile } from "./mobileNav";
 
 export function navigationInteraction() {
+    mobile();
+    animation();
+}
+
+function animation() {
     const nav = {
         el: document.querySelector('header #main nav'),
         offSet: function () {
@@ -16,7 +22,12 @@ export function navigationInteraction() {
     };
 
     items.forEach(item => {
-        const rect = item.getBoundingClientRect();
+
+        let rect = item.getBoundingClientRect();
+
+        window.addEventListener('resize', () => {
+            rect = item.getBoundingClientRect();
+        })
 
         if (item.classList.contains('active')) {
             activeRect.x = rect.x - nav.offSet();

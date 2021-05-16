@@ -38,7 +38,13 @@
             </div>
             <div class="mobile">
                 <button class="menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" fill="currentColor"/></svg>
+                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="hamburger">
+                            <line id="Line3" y1="6.5" x2="8" y2="6.5" stroke="currentColor"/>
+                            <line id="Line2" y1="3.5" x2="8" y2="3.5" stroke="currentColor"/>
+                            <line id="Line1" y1="0.5" x2="8" y2="0.5" stroke="currentColor"/>
+                        </g>
+                    </svg>
                 </button>
             </div>
         </div>
