@@ -61,6 +61,10 @@ section#main {
                     bottom: 0;
                     background: $theme-primary-color;
                     height: 4px;
+
+                    @media screen and (max-width: map-get($breakpoints, lg)) {
+                        display: none;
+                    }
                 }
 
                 @media screen and (max-width: map-get($breakpoints, lg)) {
