@@ -9,8 +9,8 @@ section#main {
                 flex: 0 0 150px;
 
                 img {
-                    width: 60%;
-                    height: 130px;
+                    width: 80%;
+                    height: 110px;
                     object-fit: contain;
 
                     @media screen and (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
