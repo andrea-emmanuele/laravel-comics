@@ -27,7 +27,7 @@ $series = config('series');
                     <div class="col">
                         <div class="adv">
                             <span class="title">advertisement</span>
-                            <a href="#"><img src="../images/adv.jpg" alt="adv"></a>
+                            <a href="#"><img src="{{ asset('images/adv.jpg') }}" alt="adv"></a>
                         </div>
                     </div>
                 </div>

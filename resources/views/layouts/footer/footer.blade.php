@@ -119,11 +119,11 @@
              <div class="inner-content">
                  <div class="item-group">
                      <span class="follow-us">follow us</span>
-                     <a href="#" class="icon"><img src="../images/footer-facebook.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="../images/footer-twitter.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="../images/footer-youtube.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="../images/footer-pinterest.png" alt="facebook"></a>
-                     <a href="#" class="icon"><img src="../images/footer-periscope.png" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="{{ asset('images/footer-facebook.png') }}" alt="facebook"></a>
+                     <a href="#" class="icon"><img src="{{ asset('images/footer-twitter.png') }}" alt="twitter"></a>
+                     <a href="#" class="icon"><img src="{{ asset('images/footer-youtube.png') }}" alt="youtube"></a>
+                     <a href="#" class="icon"><img src="{{ asset('images/footer-pinterest.png') }}" alt="pinterest"></a>
+                     <a href="#" class="icon"><img src="{{ asset('images/footer-periscope.png') }}" alt="periscope"></a>
                  </div>
              </div>
          </div>

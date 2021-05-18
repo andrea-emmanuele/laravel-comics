@@ -64,9 +64,9 @@ function createAnimation(btn) {
 
     const timing = .2;
 
-    timeline.to(group, {duration: timing, x: .7}, .1)
+    timeline.to(group, {duration: timing, x: .8 }, .1)
     timeline.to(group, {duration: timing, color: "#ef1213"}, .1)
-    timeline.to(line1, {duration: timing, rotation: 46, y: .15, x: .4}, .1)
+    timeline.to(line1, {duration: timing, rotation: 45, y: .2, x: .4}, .1)
     timeline.to(line2, {duration: timing, opacity: 0}, .1)
     timeline.to(line3, {duration: timing, rotation: -45, x: .4}, .1)
 }

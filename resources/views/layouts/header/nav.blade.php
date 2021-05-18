@@ -16,7 +16,7 @@
     <div class="content">
         <div class="inner-content">
             <div class="brand">
-                <a href="/"><img src="../images/dc-logo.png" alt="brand"></a>
+                <a href="/"><img src="{{ asset('images/dc-logo.png') }}" alt="brand"></a>
             </div>
             <nav>
                 <div class="item"><a href="#" class="secondary">characters</a></div>
